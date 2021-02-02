@@ -6,8 +6,8 @@ body {background: url("../assets/images/bg-stars.svg") no-repeat hsl(234, 17%, 1
 .content-timer__timer {display: flex;justify-content: space-between;align-items: center;}
 .content-timer__timer___digits {margin: 20px;width: 145px;}
 .content-timer__timer___digits____content {font-size: 6em;position: relative;padding: 15px;text-align: center;color: hsl(345, 95%, 68%);}
-.content-timer__timer___digits____content .digit-back {position: absolute;z-index: 0;top: 0;left: 0;padding: 15px;width: 100%;box-sizing: border-box;transform-origin: 50% 0;}
-.content-timer__timer___digits____content .digit {position: relative;z-index: 2;transform-origin: 50% 100%;}
+.content-timer__timer___digits____content .digit-back {border-radius: 10px;position: absolute;z-index: 0;top: 0;left: 0;padding: 15px;width: 100%;box-sizing: border-box;transform-origin: 50% 0;}
+.content-timer__timer___digits____content .digit {border-radius: 10px;position: relative;z-index: 2;transform-origin: 50% 100%;}
 .content-timer__timer___digits____content_____bg-up,
 .content-timer__timer___digits____content_____bg-down,
 .content-timer__timer___digits____content_____bg-overlay {width: 100%;height: 50%;border-radius: 10px;position: absolute;z-index: 1;}
@@ -15,8 +15,6 @@ body {background: url("../assets/images/bg-stars.svg") no-repeat hsl(234, 17%, 1
 .content-timer__timer___digits____content_____bg-overlay {background: hsl(230, 21%, 26%);top: 0;left: 0;box-shadow: 0 1px 10px rgba(0,0,0,.3);}
 .content-timer__timer___digits____content_____bg-overlay {background: rgba(0,0,0,.3);z-index: 3;box-shadow: none;}
 .content-timer__timer___digits____content_____bg-down {background: hsl(236, 21%, 26%);bottom: 0;left: 0;box-shadow: 0 8px 3px rgba(0,0,0,.3);}
-/*.animate .content-timer__timer___digits____content_____bg-up {animation: flipup .5s linear both;}*/
-/*.animate .content-timer__timer___digits____content_____bg-down {animation: flipdown .5s .5s linear both;}*/
 .content-timer__timer___digits h3 {padding: 15px;color: hsl(237, 18%, 59%);}
 .social-media {background: url("../assets/images/pattern-hills.svg") no-repeat hsl(234, 17%, 12%);background-size: 100% 100%;width: 100%;display: flex;justify-content: center;align-items: center;padding: 0;height: 200px;}
 .social-media a.social-media-link {width: 32px;height: 32px;margin: 40px 15px 0;}
@@ -25,13 +23,13 @@ body {background: url("../assets/images/bg-stars.svg") no-repeat hsl(234, 17%, 1
 .social-media a.social-media-link.instagram:after {content: url("../assets/images/icon-instagram.svg");}
 
 @keyframes flipdown {
-    0% {transform: rotateX(90deg);}
-    80% {transform: rotateX(5deg);}
-    90% {transform: rotateX(15deg);}
-    100% {transform: rotateX(0deg);}
-}
-@keyframes flipup {
-    0% {transform: rotateX(0deg);}
-    90% {transform: rotateX(0deg);}
-    100% {transform: rotateX(-90deg);}
+    5% {transform: rotateX(280deg);width: 102%;left: -1%;box-shadow: 0 80px 0 hsl(236, 21%, 26%);z-index: 1;}
+    15% {box-shadow: 0 60px 0 hsl(236, 21%, 26%);z-index: 1;}
+    25% {box-shadow: 0 50px 0 hsl(236, 21%, 26%);z-index: 2;}
+    35% {box-shadow: 0 40px 0 hsl(236, 21%, 26%);z-index: 2;}
+    45% {box-shadow: 0 30px 0 hsl(236, 21%, 26%);z-index: 2;}
+    55% {box-shadow: 0 20px 3px rgba(0,0,0,.8);z-index: 2;}
+    65% {box-shadow: 0 10px 3px rgba(0,0,0,.7);z-index: 2;}
+    75% {box-shadow: 0 8px 3px rgba(0,0,0,.3);z-index: 1;}
+    100% {transform: rotateX(0deg);z-index: 1;}
 }

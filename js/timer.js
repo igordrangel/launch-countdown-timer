@@ -24,13 +24,6 @@ function countdownTimeStart(){
         document.getElementById('content-timer__timer___digits__minutes').innerText = (minutes < 10 ? '0' + minutes : minutes);
         document.getElementById('content-timer__timer___digits__seconds').innerText = (seconds < 10 ? '0' + seconds : seconds);
 
-        setTimeout(() => {
-            document.getElementById('content-timer__timer___digits__days-back').innerText = (days < 10 ? '0' + days : days);
-            document.getElementById('content-timer__timer___digits__hours-back').innerText = (hours < 10 ? '0' + hours : hours);
-            document.getElementById('content-timer__timer___digits__minutes-back').innerText = (minutes < 10 ? '0' + minutes : minutes);
-            document.getElementById('content-timer__timer___digits__seconds-back').innerText = (seconds < 10 ? '0' + seconds : seconds);
-        },500);
-
         if (distance < 0) {
             clearInterval(timerInterval);
             clearInterval(animationInterval);
