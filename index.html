@@ -2,37 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <title>Frontend Mentor | Launch countdown timer</title>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <h1>We're launching soon</h1>
-  <section>
-    <div class="content-timer">
-      <h2 id="content-timer__days">00</h2>
-      <h3>Days</h3>
-    </div>
+  <section class="content-timer">
+    <h1>We're launching soon</h1>
 
-    <div class="content-timer">
-      <h2 id="content-timer__hours">00</h2>
-      <h3>Hours</h3>
-    </div>
+    <div class="content-timer__timer">
+      <div class="content-timer__timer___digits">
+        <div class="content-timer__timer___digits____content">
+          <div id="content-timer__timer___digits__days" class="digit">00</div>
+          <div id="content-timer__timer___digits__days-back" class="digit-back">00</div>
+          <div class="content-timer__timer___digits____content_____bg-up"></div>
+          <div class="content-timer__timer___digits____content_____bg-down"></div>
+          <div class="content-timer__timer___digits____content_____bg-overlay"></div>
+        </div>
+        <h3>Days</h3>
+      </div>
 
-    <div class="content-timer">
-      <h2 id="content-timer__minutes">00</h2>
-      <h3>Minutes</h3>
-    </div>
+      <div class="content-timer__timer___digits">
+        <div class="content-timer__timer___digits____content">
+          <div id="content-timer__timer___digits__hours" class="digit">00</div>
+          <div id="content-timer__timer___digits__hours-back" class="digit-back">00</div>
+          <div class="content-timer__timer___digits____content_____bg-up"></div>
+          <div class="content-timer__timer___digits____content_____bg-down"></div>
+          <div class="content-timer__timer___digits____content_____bg-overlay"></div>
+        </div>
+        <h3>Hours</h3>
+      </div>
 
-    <div class="content-timer">
-      <h2 id="content-timer__seconds">00</h2>
-      <h3>Seconds</h3>
+      <div class="content-timer__timer___digits">
+        <div class="content-timer__timer___digits____content">
+          <div id="content-timer__timer___digits__minutes" class="digit">00</div>
+          <div id="content-timer__timer___digits__minutes-back" class="digit-back">00</div>
+          <div class="content-timer__timer___digits____content_____bg-up"></div>
+          <div class="content-timer__timer___digits____content_____bg-down"></div>
+          <div class="content-timer__timer___digits____content_____bg-overlay"></div>
+        </div>
+        <h3>Minutes</h3>
+      </div>
+
+      <div class="content-timer__timer___digits">
+        <div class="content-timer__timer___digits____content seconds">
+          <div id="content-timer__timer___digits__seconds" class="digit">00</div>
+          <div id="content-timer__timer___digits__seconds-back" class="digit-back">00</div>
+          <div class="content-timer__timer___digits____content_____bg-up"></div>
+          <div class="content-timer__timer___digits____content_____bg-down"></div>
+          <div class="content-timer__timer___digits____content_____bg-overlay"></div>
+        </div>
+        <h3>Seconds</h3>
+      </div>
     </div>
   </section>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="social-media">
+    <a class="social-media-link facebook" href="#"></a>
+    <a class="social-media-link pinterest" href="#"></a>
+    <a class="social-media-link instagram" href="#"></a>
+  </footer>
+  <script src="js/timer.js"></script>
 </body>
 </html>
